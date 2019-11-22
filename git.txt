@@ -1,0 +1,121 @@
+:w 保存文件但不退出vi
+:w! 强制保存，不推出vi
+:wq 保存文件并退出vi
+:wq! 强制保存文件，并退出vi
+:q 不保存文件，退出vi
+:q! 不保存文件，强制退出vi
+676332916@qq.com
+QQmeng0503
+
+1.设置git用户名／邮箱：
+git config --global user.name [username]
+git config --global user.email [email]
+
+2.查看当前用户
+git config user.name
+
+3.初始化仓库
+git init
+
+4.克隆
+git clone 地址
+
+5.添加文件
+git add readme.txt    eg:（git add file1.txt file2.txt）
+
+6.查看当前状态
+git status
+
+7.提交文件
+git commit
+git commit -m "提交文件说明"
+
+8.查看版本差异
+git diff     (git diff HEAD -- readme.txt查看工作区和版本库里面最新版本的区别)
+
+9.查看从最近到最远的提交日志
+git log    参数（--pretty=oneline）
+git log --author=xingmeng (只看某一个人提交的记录)
+
+10.退到上一版本
+git reset --hard HEAD^     （HEAD~100 ：100个版本前）
+git reset --hard 版本号
+
+11.记录每一次操作的命令
+git reflog
+
+
+12.撤销工作区文件修改
+git checkout -- readme.txt 把readme.txt文件在工作区的修改全部撤销
+
+git checkout -b host//添加一个名为host的分支
+
+13.删除文件
+git rm 文件
+
+14.把本地内容推送到远程
+git push origin master
+
+15.从远程获取最新版本到本地，不会自动合并
+git fetch
+
+从远程获取最新版本并merge到本地
+git pull
+git pull origin master(相当于git fetch 和 git merge)
+
+16.查看当前分支
+git branch  (查看所有分支  ：git branch -a)
+git branch -d dev 删除dev分支
+    创建分支：git branch name
+
+　　切换分支：git checkout name
+
+　　创建+切换分支：git checkout –b name
+
+　　合并某分支到当前分支：git merge name
+
+17.合并分支
+git merge 原分支  目标分支
+
+
+把所有未提交的修改（包括暂存的和非暂存的）都保存起来，用于后续恢复当前工作目录。
+git stash
+
+18.创建标签
+git tag v1.0
+
+19.查看远程库的信息
+git remote
+
+
+21.另一个分支基础之上重新应用，用于把一个分支的修改合并到当前分支
+git rebase
+
+22.当远程服务器上的内容更新，需要将本地内容与git上同步时，
+	查看远程服务器是否为需要同步的服务器，输入 git remote -v查看
+
+	使用git pull进行更新本地文件
+
+23.要关联一个远程库，使用命令git remote add origin git@server-name:path/repo-name.git；
+
+关联后，使用命令git push -u origin master第一次推送master分支的所有内容；
+
+此后，每次本地提交后，只要有必要，就可以使用命令git push origin master推送最新修改；
+
+
+冲突解决方法：
+git fetch先下载，然后meger就会抱冲突，然后改代码，然后提
+
+1.git_fetch
+2.查看冲突文件
+3.改代码
+4.git add .
+5.git rebase --continue 结束进程
+6.可以git commit  但是会提示nothing to commit ,working tree clean
+7.git push origin master
+
+出现Your local changes to the following files would be overwritten by merge:解决方法：
+保留刚才本地修改的代码，并把git服务器上的代码pull到本地（本地刚才修改的代码将会被暂时封存起来）
+1.git stash
+2.git pull origin master
+3.git stash pop
