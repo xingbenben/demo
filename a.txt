@@ -1,0 +1,115 @@
+公司内部测试机:
+IP     172.27.1.124 
+端口   51518
+用户名     icp
+密码         cl.123.com
+程序目录   /usr/share/nginx/html/php  
+
+数据库：
+IP        172.27.1.102
+端口      3306
+用户名    chinahrt01
+密码      123456
+
+
+http://www.chinahrt.com/uploadfile/2017/0914/20170914045113580.swf  图片替换
+
+
+git版本库：
+http://172.27.1.123:8080/gitblit-1.6.2/summary/php.git
+
+
+切换root: sudo -i
+nginx配置文件：/etc/nginx/nginx.conf
+重启：service nginx restart
+
+上传文件：sudo rz
+
+启动php5.6: sudo /usr/sbin/php-fpm 
+
+ps -ef |grep php.fpm
+
+
+
+服务器地址：php2下   cd /data/php/
+
+cat git.sh
+
+./git.sh hnzj
+
+织梦地址：/data/dede     nginx配置：/app/nginx/conf/vhost/
+
+
+线上服务器地址：
+  123.59.115.159
+  协议：ssh
+  端口号：51518
+  帐号：xingmeng   xingmeng666
+
+sxf对应的域名：
+
+jjxhnew ======= www.cacee.org.cn
+
+cacee =======  cn.cacee.org.cn 
+
+jxxt_mayor  ======= jxxt.mayortraining.org
+
+old_mayor  =======  old.mayortraining.org
+
+mayor  =======  new.mayortraining.org  www.mayortraining.org  www.jsbgbxy.com.cn  mayortraining.org
+
+
+baotouzj.chinahrt.com
+caastc.chinahrt.com
+cdtyjrtest.chinahrt.com
+center.chinahrt.com
+cdzj.chinahrt.com
+chinacar.chinahrt.com
+cqzj.chinahrt.com.cn
+www.exammm.com
+gszj.chinahrt.com
+guizhouzj.chinahrt.com
+hangyeke.chinahrt.com
+hbzj.chinahrt.com
+hkzj.chinahrt.com
+hn.chinahrt.com
+hnkf.chinahrt.com
+hnzj.chinahrt.com
+home.chinahrt.com
+jn.ethrss.cn
+jn.chinahrt.com  打不开
+jsgc.chinahrt.com
+kdbppx.chinahrt.com
+lsbz.chinahrt.com
+meishan.scjxjypx.com   111
+mohurd.chinahrt.com    111
+nmgcf.chinahrt.com
+nmg.chinahrt.com
+nmggwy.chinahrt.com
+nmghjgc.chinahrt.com
+nxzj.chinahrt.com
+papi.chinahrt.com
+qingshuihe.chinahrt.com
+sanya.chinahrt.com
+scgwydjt.chinahrt.com
+shahe.chinahrt.com
+source.chinahrt.com
+tianjinjg.chinahrt.com
+tjzjjxjy.chinahrt.com   11
+wujiang.chinahrt.com
+jituan.chinahrt.com
+www.chinahrt.com
+www.gdace.cn  1111
+www.scjxjypx.com
+www.sczzpx.com
+www.sdrcpx.com   111
+www.welding.chinahrt.com
+www.zjbxcn.com  111
+wx.chinahrt.com
+xamzj.chinahrt.com   111
+xcwjw.chinahrt.com
+xlfd.chinahrt.com
+xzzj.chinahrt.com
+yqzj.chinahrt.com
+zygl.chinahrt.com
+zyys.chinahrt.com   111
